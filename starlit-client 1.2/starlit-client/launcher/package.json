@@ -1,0 +1,24 @@
+{
+  "name": "starlit-launcher",
+  "productName": "Starlit Launcher",
+  "version": "0.1.0",
+  "description": "Launcher for Minecraft 1.14 - 1.21.11 with Fabric and the Starlit mod",
+  "main": "src/main/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.js",
+    "add-starlit": "node scripts/add-starlit-build.js",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "dev.starlit.launcher",
+    "files": ["src/**/*", "package.json"],
+    "extraResources": [{ "from": "starlit-mods", "to": "starlit-mods" }],
+    "win": { "target": "nsis" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "dev.starlit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "dev.starlit.mixin.StarlitMixinPlugin",
+  "client": [
+    "SkyRendererIntMixin",
+    "SkyRendererFloatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

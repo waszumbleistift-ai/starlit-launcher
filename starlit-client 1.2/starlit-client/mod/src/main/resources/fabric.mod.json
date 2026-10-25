@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "starlit",
+  "version": "${version}",
+  "name": "Starlit",
+  "description": "A visual client in a single mod: module menu, HUD widgets, Sky, LyricSky and themes shared with the Starlit launcher.",
+  "authors": [
+    "you"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.starlit.StarlitMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "starlit.mixins.json"
+  ]
+}
